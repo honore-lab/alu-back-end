@@ -20,15 +20,14 @@ if __name__ == "__main__":
 
     total_tasks = len(todos)
     done_tasks = 0
-    done_titles = []
 
     for task in todos:
         if task.get("completed") is True:
             done_tasks += 1
-            done_titles.append(task.get("title"))
 
     print("Employee {} is done with tasks({}/{}):".format(
         employee_name, done_tasks, total_tasks))
 
-    for title in done_titles:
-        print("\t {}".format(title))
+    for task in todos:
+        if task.get("completed") is True:
+            print("\t {}".format(task.get("title")))
