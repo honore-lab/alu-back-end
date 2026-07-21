@@ -32,4 +32,3 @@ if __name__ == "__main__":
             completed = str(task.get("completed"))
             title = task.get("title")
             writer.writerow([emp_id, username, completed, title])
-            
