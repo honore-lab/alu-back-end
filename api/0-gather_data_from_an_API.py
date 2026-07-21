@@ -4,7 +4,7 @@ Module docstring: A Python script that gathers employee TODO list progress
 from a REST API and prints it to the standard output.
 """
 
-import requests
+from sys import argv
 import requests
 
 
@@ -35,3 +35,4 @@ if __name__ == "__main__":
 
     for task in done_tasks:
         print(f"\t {task.get('title')}")
+        
