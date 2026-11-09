@@ -21,3 +21,4 @@ if __name__ == "__main__":
     print(head.format(user.get("name"), len(done), len(todos)))
     for title in done:
         print("\t {}".format(title))
+        
